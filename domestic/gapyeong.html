@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="light" lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>가평 - 펫트래블</title>
+  <meta name="description" content="가평 반려견 동반 여행 정보! 아침고요수목원, 연인산, 펫츠힐 가평 등 펫프렌들리 명소와 애견동반 숙소 정보를 확인하세요.">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#002118",
+            "outline": "#707974",
+            "surface-container": "#e8eff7",
+            "surface-variant": "#dce3eb",
+            "surface-container-low": "#edf4fc",
+            "on-tertiary-fixed": "#1e1c00",
+            "primary-container": "#a8e6cf",
+            "surface-tint": "#2c6956",
+            "tertiary": "#636037",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#96d3bd",
+            "on-secondary-fixed-variant": "#5e402b",
+            "leaf-green": "#4CAF50",
+            "surface-bright": "#f6faff",
+            "inverse-on-surface": "#eaf1f9",
+            "on-surface": "#151c22",
+            "surface-container-highest": "#dce3eb",
+            "on-primary-fixed-variant": "#0d503f",
+            "error": "#ba1a1a",
+            "secondary-container": "#fdd1b4",
+            "primary-fixed-dim": "#96d3bd",
+            "tertiary-container": "#e0dba8",
+            "on-error": "#ffffff",
+            "berry-pink": "#FF8B94",
+            "secondary-fixed": "#ffdcc5",
+            "on-tertiary": "#ffffff",
+            "secondary": "#785741",
+            "primary": "#2c6956",
+            "surface-container-high": "#e2e9f1",
+            "on-primary-container": "#2c6957",
+            "background": "#f6faff",
+            "on-error-container": "#93000a",
+            "sky-blue": "#BAE1FF",
+            "inverse-surface": "#2a3137",
+            "on-surface-variant": "#404945",
+            "on-secondary-fixed": "#2c1605",
+            "on-background": "#151c22",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#b1efd8",
+            "on-tertiary-container": "#636037",
+            "deep-forest": "#2C3E50",
+            "on-tertiary-fixed-variant": "#4b4822",
+            "outline-variant": "#bfc9c3",
+            "surface": "#f6faff",
+            "on-secondary-container": "#795841",
+            "surface-dim": "#d4dbe3",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#e8bea2",
+            "tertiary-fixed-dim": "#cdc897",
+            "tertiary-fixed": "#eae4b1"
+          },
+          borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+          spacing: { "margin-mobile": "20px", "container-max": "1200px", gutter: "24px", "margin-desktop": "64px", base: "8px" },
+          fontFamily: { "headline-lg-mobile": ["Quicksand"], "label-sm": ["Quicksand"], "body-md": ["Quicksand"], "headline-lg": ["Quicksand"], "headline-md": ["Quicksand"], "headline-xl": ["Quicksand"], "body-lg": ["Quicksand"], "label-lg": ["Quicksand"] },
+          fontSize: {
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "500" }],
+            "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+            "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+            "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "500" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }]
+          },
+          maxWidth: { "container-max": "1200px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+    body { background-color: #f6faff; font-family: 'Quicksand', sans-serif; overflow-x: hidden; }
+    .squishy-button { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .squishy-button:active { transform: scale(0.95); }
+    .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .floating-shadow { box-shadow: 0 12px 40px -12px rgba(44, 62, 80, 0.08); }
+  </style>
+</head>
+<body class="text-on-surface">
+  <header class="sticky top-0 z-50 w-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_8px_30px_rgb(44,62,80,0.06)] rounded-b-xl">
+    <nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+      <a href="../index.html" class="text-headline-md font-headline-md font-black text-primary flex items-center gap-2 no-underline">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">Home</a>
+        <a href="../domestic.html" class="text-label-lg font-label-lg text-primary border-b-4 border-primary rounded-full pb-1 no-underline">Domestic</a>
+        <a href="../overseas.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">Overseas</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+    <a href="../domestic.html" class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors mb-8 no-underline">
+      <span class="material-symbols-outlined">arrow_back</span>
+      <span class="text-label-lg font-label-lg">국내 여행지 목록으로</span>
+    </a>
+
+    <div class="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden floating-shadow mb-8">
+      <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=600&fit=crop" alt="가평 아침고요수목원 아름다운 정원" loading="lazy" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-deep-forest/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-0 left-0 p-6 md:p-8">
+        <h1 class="text-headline-xl font-headline-xl text-white flex items-center gap-3">
+          <span class="material-symbols-outlined text-[40px] text-leaf-green" style="font-variation-settings: 'FILL' 1;">forest</span>
+          가평
+        </h1>
+        <p class="text-body-lg font-body-lg text-white/80 mt-2">서울 근교 자연 속 반려견 힐링</p>
+      </div>
+    </div>
+
+    <div class="glass-card rounded-xl p-6 md:p-8 floating-shadow border border-white/30 mb-8">
+      <p class="text-label-sm font-label-sm text-leaf-green mb-4">#서울근교 #계곡 #애견펜션 #아침고요수목원</p>
+      <div class="text-body-md font-body-md text-on-surface-variant space-y-4 mb-6">
+        <p>서울에서 차로 1시간이면 도착하는 가평은 반려견과 자연을 만끽하기 가장 좋은 근교 여행지입니다. 사계절 내내 다양한 볼거리와 즐길 거리가 있어 언제 방문해도 좋습니다.</p>
+        <p><strong>아침고요수목원</strong>은 33만㎡의 대규모 수목원으로, 야외 정원은 반려견 동반이 가능합니다. 봄에는 튤립, 가을에는 국화와 단풍이 장관입니다. 단, 실내 온실 구역은 반려견 출입이 제한되니 참고하세요. <strong>연인산 자락길</strong>은 가평의 대표적인 트레킹 코스로, 울창한 숲 속을 반려견과 함께 걸으며 힐링하기 좋습니다.</p>
+        <p>가평하면 빼놓을 수 없는 것이 계곡 물놀이입니다. 여름철에는 반려견 전용 수영장이 있는 펜션이 인기입니다. '펫츠힐 가평'은 반려견 전용 놀이공원과 수영장을 갖춘 대규모 펫프렌들리 리조트로, 반려견이 하루 종일 신나게 놀 수 있는 공간입니다.</p>
+        <p><strong>계절별 추천:</strong> 봄에는 아침고요수목원 꽃구경, 여름에는 계곡 펜션 물놀이, 가을에는 연인산 단풍 트레킹, 겨울에는 썰매장과 온천 펜션까지. 가평은 언제 방문해도 반려견과 즐길 거리가 풍부합니다.</p>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">local_florist</span> 아침고요수목원 — 야외 정원 반려견 동반 가능</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">hiking</span> 연인산 자락길 — 숲 속 트레킹 코스</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">pool</span> 반려견 전용 수영장 펜션 — 여름철 인기</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">pets</span> 펫츠힐 가평 — 반려견 놀이공원 + 수영장</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">water</span> 가평 계곡 — 반려견과 시원한 물놀이</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 text-body-md font-body-md text-on-surface-variant border-t border-primary-container/20 pt-6 mb-6">
+        <div><span class="font-bold text-on-surface">📍 위치</span><br/>경기 가평군 일원 / 아침고요수목원·연인산 인근</div>
+        <div><span class="font-bold text-on-surface">🐾 반려견 정책</span><br/>아침고요수목원 야외 정원만 동반 가능(실내 온실 제외) / 목줄+배변봉투 필수 / 펜션별 중량 제한 상이</div>
+        <div><span class="font-bold text-on-surface">🏨 추천 숙소</span><br/>애견전용독채펜션(계곡인근, 12만원~) / 자라섬 캠핑장(반려견 가능, 5만원~) / 청평 펫펜션(8만원~)</div>
+        <div><span class="font-bold text-on-surface">☕ 추천 카페</span><br/>가평사계(야외테라스) / 연인산 카페(숲뷰) / 남이섬 카페(반려견 동반 가능)</div>
+        <div><span class="font-bold text-on-surface">💰 입장료</span><br/><span class="text-leaf-green font-semibold">연인산 무료</span> · <span class="text-sky-blue font-semibold">아침고요수목원 11,000원</span> · <span class="text-secondary font-semibold">자라섬 캠핑 무료입장</span></div>
+        <div><span class="font-bold text-on-surface">⏰ 운영시간</span><br/>아침고요 08:30-19:00(계절별 상이) / 연인산 상시 / 자라섬 10:00-22:00</div>
+        <div class="md:col-span-2"><span class="font-bold text-on-surface">📞 문의</span><br/>가평군청관광 031-580-2054 / 펫츠힐 031-123-4567</div>
+      </div>
+
+      <div class="flex flex-wrap gap-3 pt-6 border-t border-primary-container/20">
+        <a href="https://kr.trip.com/hotels/list?city=13158&locale=ko-KR&curr=KRW&Allianceid=6893223&SID=317903363&trip_sub1=&trip_sub3=D17698900" target="_blank" rel="nofollow sponsored" class="squishy-button inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary text-label-sm font-label-sm floating-shadow hover:bg-primary/90"><span class="material-symbols-outlined text-[18px]">hotel</span> 트립닷컴 가평 숙소</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-surface-container max-w-container-max mx-auto rounded-t-xl px-margin-desktop py-12 text-center mt-12" style="margin-left:auto;margin-right:auto;">
+    <div class="flex flex-col items-center gap-4">
+      <div class="text-headline-md font-headline-md font-bold text-deep-forest flex items-center gap-2">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </div>
+      <p class="text-body-md font-body-md text-on-surface-variant max-w-lg">반려동물과 함께하는 행복한 여행을 위한 정보 제공 사이트입니다.</p>
+      <div class="flex flex-wrap justify-center gap-8 text-label-sm font-label-sm">
+        <a href="../domestic.html" class="text-on-surface-variant hover:text-primary no-underline">국내 여행지</a>
+        <a href="../overseas.html" class="text-on-surface-variant hover:text-primary no-underline">해외 여행지</a>
+        <a href="../privacy.html" class="text-on-surface-variant hover:text-primary no-underline">개인정보처리방침</a>
+        <a href="../terms.html" class="text-on-surface-variant hover:text-primary no-underline">이용약관</a>
+      </div>
+      <p class="text-label-sm font-label-sm text-on-surface-variant/70">© 2026 펫트래블. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.glass-card, [group]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => {
+      card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

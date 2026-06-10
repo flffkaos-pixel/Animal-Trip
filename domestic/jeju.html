@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="light" lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>제주도 - 펫트래블</title>
+  <meta name="description" content="제주도 반려견 동반 여행 정보! 함덕해수욕장, 비자림, 애월 해안도로 등 펫프렌들리 명소와 애견동반 숙소, 카페 정보를 확인하세요.">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#002118",
+            "outline": "#707974",
+            "surface-container": "#e8eff7",
+            "surface-variant": "#dce3eb",
+            "surface-container-low": "#edf4fc",
+            "on-tertiary-fixed": "#1e1c00",
+            "primary-container": "#a8e6cf",
+            "surface-tint": "#2c6956",
+            "tertiary": "#636037",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#96d3bd",
+            "on-secondary-fixed-variant": "#5e402b",
+            "leaf-green": "#4CAF50",
+            "surface-bright": "#f6faff",
+            "inverse-on-surface": "#eaf1f9",
+            "on-surface": "#151c22",
+            "surface-container-highest": "#dce3eb",
+            "on-primary-fixed-variant": "#0d503f",
+            "error": "#ba1a1a",
+            "secondary-container": "#fdd1b4",
+            "primary-fixed-dim": "#96d3bd",
+            "tertiary-container": "#e0dba8",
+            "on-error": "#ffffff",
+            "berry-pink": "#FF8B94",
+            "secondary-fixed": "#ffdcc5",
+            "on-tertiary": "#ffffff",
+            "secondary": "#785741",
+            "primary": "#2c6956",
+            "surface-container-high": "#e2e9f1",
+            "on-primary-container": "#2c6957",
+            "background": "#f6faff",
+            "on-error-container": "#93000a",
+            "sky-blue": "#BAE1FF",
+            "inverse-surface": "#2a3137",
+            "on-surface-variant": "#404945",
+            "on-secondary-fixed": "#2c1605",
+            "on-background": "#151c22",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#b1efd8",
+            "on-tertiary-container": "#636037",
+            "deep-forest": "#2C3E50",
+            "on-tertiary-fixed-variant": "#4b4822",
+            "outline-variant": "#bfc9c3",
+            "surface": "#f6faff",
+            "on-secondary-container": "#795841",
+            "surface-dim": "#d4dbe3",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#e8bea2",
+            "tertiary-fixed-dim": "#cdc897",
+            "tertiary-fixed": "#eae4b1"
+          },
+          borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+          spacing: { "margin-mobile": "20px", "container-max": "1200px", gutter: "24px", "margin-desktop": "64px", base: "8px" },
+          fontFamily: { "headline-lg-mobile": ["Quicksand"], "label-sm": ["Quicksand"], "body-md": ["Quicksand"], "headline-lg": ["Quicksand"], "headline-md": ["Quicksand"], "headline-xl": ["Quicksand"], "body-lg": ["Quicksand"], "label-lg": ["Quicksand"] },
+          fontSize: {
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "500" }],
+            "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+            "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+            "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "500" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }]
+          },
+          maxWidth: { "container-max": "1200px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+    body { background-color: #f6faff; font-family: 'Quicksand', sans-serif; overflow-x: hidden; }
+    .squishy-button { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .squishy-button:active { transform: scale(0.95); }
+    .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .floating-shadow { box-shadow: 0 12px 40px -12px rgba(44, 62, 80, 0.08); }
+  </style>
+</head>
+<body class="text-on-surface">
+  <header class="sticky top-0 z-50 w-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_8px_30px_rgb(44,62,80,0.06)] rounded-b-xl">
+    <nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+      <a href="../index.html" class="text-headline-md font-headline-md font-black text-primary flex items-center gap-2 no-underline">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">Home</a>
+        <a href="../domestic.html" class="text-label-lg font-label-lg text-primary border-b-4 border-primary rounded-full pb-1 no-underline">Domestic</a>
+        <a href="../overseas.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">Overseas</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+    <a href="../domestic.html" class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors mb-8 no-underline">
+      <span class="material-symbols-outlined">arrow_back</span>
+      <span class="text-label-lg font-label-lg">국내 여행지 목록으로</span>
+    </a>
+
+    <div class="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden floating-shadow mb-8">
+      <img src="https://images.unsplash.com/photo-1590602847861-f38b77525e3b?w=1200&h=600&fit=crop" alt="제주도 함덕해수욕장 에메랄드빛 바다" loading="lazy" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-deep-forest/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-0 left-0 p-6 md:p-8">
+        <h1 class="text-headline-xl font-headline-xl text-white flex items-center gap-3">
+          <span class="material-symbols-outlined text-[40px] text-primary-container" style="font-variation-settings: 'FILL' 1;">beach_access</span>
+          제주도
+        </h1>
+        <p class="text-body-lg font-body-lg text-white/80 mt-2">반려견과 떠나는 섬 여행의 로망</p>
+      </div>
+    </div>
+
+    <div class="glass-card rounded-xl p-6 md:p-8 floating-shadow border border-white/30 mb-8">
+      <p class="text-label-sm font-label-sm text-primary mb-4">#반려견동반여행지1순위 #제주도 #펫프렌들리 #애견동반펜션</p>
+      <div class="text-body-md font-body-md text-on-surface-variant space-y-4 mb-6">
+        <p>제주도는 단연코 국내 반려동물 동반 여행지 1순위입니다. 반려견과 함께 비행기를 타고 갈 수 있어 접근성이 좋고, 섬 전체가 관광지라 반려견과 즐길 거리가 무궁무진합니다.</p>
+        <p><strong>함덕해수욕장</strong>은 에메랄드빛 바다가 일품으로, 이른 아침이나 저녁 시간에 방문하면 반려견과 한적하게 백사장을 산책할 수 있습니다. <strong>애월 해안도로</strong>는 드라이브 코스로 유명하며, 중간중간 반려견 동반이 가능한 카페가 많아 쉬어가기 좋습니다. 특히 애월읍 일대는 반려견 전용 펜션이 밀집해 있어 숙소 선택의 폭이 넓습니다.</p>
+        <p>자연을 좋아하는 반려견이라면 <strong>비자림</strong>을 추천합니다. 4km에 달하는 숲길은 평탄해서 반려견과 산책하기 좋고, 울창한 나무 그늘이 있어 여름에도 시원하게 걸을 수 있습니다. 제주도의 펫프렌들리 카페는 타 지역보다 월등히 많아, 카페 투어만으로도 알찬 여행 코스를 만들 수 있습니다.</p>
+        <p><strong>숙소 팁:</strong> 제주도는 반려견 전용 독채 펜션, 마당이 있는 단독 숙소, 반려견 수영장이 있는 리조트까지 다양합니다. 성수기에는 펫프렌들리 숙소가 빠르게 마감되니 2~3주 전 예약은 필수입니다.</p>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">pets</span> 함덕해수욕장 — 이른 아침 반려견과 백사장 산책</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_boat</span> 애월 해안도로 — 바다 뷰 드라이브 + 펫카페 투어</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">forest</span> 비자림 — 4km 숲길 반려견과 도보 산책</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">cottage</span> 애견 전용 독채 펜션</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">local_cafe</span> 펫카페 투어 — 애월읍, 구좌읍</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">ferry</span> 우도행 페리 — 섬 속의 섬 여행</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 text-body-md font-body-md text-on-surface-variant border-t border-primary-container/20 pt-6 mb-6">
+        <div><span class="font-bold text-on-surface">📍 위치</span><br/>제주특별자치도 전역 / 제주국제공항 인근</div>
+        <div><span class="font-bold text-on-surface">🐾 반려견 정책</span><br/>기내반입 7kg 이하(항공사별 상이) / 대형견 화물칸 가능 / 해변 목줄 필수 / 펜션별 중량 제한 상이(보통 12kg 이하)</div>
+        <div><span class="font-bold text-on-surface">🏨 추천 숙소</span><br/>제주솔펜션(성산일출봉, 8만원~, 064-782-2478) / 애견전용 독채펜션(마당보유, 12만원~) / 호텔 그레이(펫객실, 15만원~)</div>
+        <div><span class="font-bold text-on-surface">☕ 추천 카페</span><br/>봄날(애월 카페거리) / 몽상드애월(바다뷰) / 도토리숲(지브리 감성카페)</div>
+        <div><span class="font-bold text-on-surface">💰 입장료</span><br/><span class="text-leaf-green font-semibold">비자림 무료</span> · <span class="text-sky-blue font-semibold">함덕해변 무료</span> · <span class="text-secondary font-semibold">우도행 페리 왕복 5,500원(반려견 포함)</span></div>
+        <div><span class="font-bold text-on-surface">⏰ 운영시간</span><br/>비자림 09:00-18:00 / 함덕해변 연중무휴 / 펫카페 대부분 10:00-21:00</div>
+        <div class="md:col-span-2"><span class="font-bold text-on-surface">📞 문의</span><br/>제주관광정보 064-740-6000 / 비자림 064-728-8850</div>
+      </div>
+
+      <div class="flex flex-wrap gap-3 pt-6 border-t border-primary-container/20">
+        <a href="https://affiliate.klook.com/redirect/?aid=67213&campaign=domestic-2026&k_site=https%3A%2F%2Fwww.klook.com%2Fko%2Fdestination%2Fc20544-jeju%2F" target="_blank" rel="nofollow sponsored" class="squishy-button inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary text-label-sm font-label-sm floating-shadow hover:bg-primary/90"><span class="material-symbols-outlined text-[18px]">confirmation_number</span> 클룩 제주 할인상품</a>
+        <a href="https://kr.trip.com/hotels/pet-friendly/city/kr/jeju.html?Allianceid=6893223&SID=317903363" target="_blank" rel="nofollow sponsored" class="squishy-button inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary-container text-on-secondary-container text-label-sm font-label-sm hover:bg-secondary-container/80"><span class="material-symbols-outlined text-[18px]">hotel</span> 트립닷컴 제주 애견동반 호텔</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-surface-container max-w-container-max mx-auto rounded-t-xl px-margin-desktop py-12 text-center mt-12" style="margin-left:auto;margin-right:auto;">
+    <div class="flex flex-col items-center gap-4">
+      <div class="text-headline-md font-headline-md font-bold text-deep-forest flex items-center gap-2">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </div>
+      <p class="text-body-md font-body-md text-on-surface-variant max-w-lg">반려동물과 함께하는 행복한 여행을 위한 정보 제공 사이트입니다.</p>
+      <div class="flex flex-wrap justify-center gap-8 text-label-sm font-label-sm">
+        <a href="../domestic.html" class="text-on-surface-variant hover:text-primary no-underline">국내 여행지</a>
+        <a href="../overseas.html" class="text-on-surface-variant hover:text-primary no-underline">해외 여행지</a>
+        <a href="../privacy.html" class="text-on-surface-variant hover:text-primary no-underline">개인정보처리방침</a>
+        <a href="../terms.html" class="text-on-surface-variant hover:text-primary no-underline">이용약관</a>
+      </div>
+      <p class="text-label-sm font-label-sm text-on-surface-variant/70">© 2026 펫트래블. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.glass-card, [group]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => {
+      card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

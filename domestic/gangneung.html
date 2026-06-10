@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="light" lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>강릉 - 펫트래블</title>
+  <meta name="description" content="강릉 반려견 동반 여행 정보! 경포해변, 안목해변 커피거리, 마루커피 등 펫프렌들리 명소와 애견동반 숙소 정보를 확인하세요.">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#002118",
+            "outline": "#707974",
+            "surface-container": "#e8eff7",
+            "surface-variant": "#dce3eb",
+            "surface-container-low": "#edf4fc",
+            "on-tertiary-fixed": "#1e1c00",
+            "primary-container": "#a8e6cf",
+            "surface-tint": "#2c6956",
+            "tertiary": "#636037",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#96d3bd",
+            "on-secondary-fixed-variant": "#5e402b",
+            "leaf-green": "#4CAF50",
+            "surface-bright": "#f6faff",
+            "inverse-on-surface": "#eaf1f9",
+            "on-surface": "#151c22",
+            "surface-container-highest": "#dce3eb",
+            "on-primary-fixed-variant": "#0d503f",
+            "error": "#ba1a1a",
+            "secondary-container": "#fdd1b4",
+            "primary-fixed-dim": "#96d3bd",
+            "tertiary-container": "#e0dba8",
+            "on-error": "#ffffff",
+            "berry-pink": "#FF8B94",
+            "secondary-fixed": "#ffdcc5",
+            "on-tertiary": "#ffffff",
+            "secondary": "#785741",
+            "primary": "#2c6956",
+            "surface-container-high": "#e2e9f1",
+            "on-primary-container": "#2c6957",
+            "background": "#f6faff",
+            "on-error-container": "#93000a",
+            "sky-blue": "#BAE1FF",
+            "inverse-surface": "#2a3137",
+            "on-surface-variant": "#404945",
+            "on-secondary-fixed": "#2c1605",
+            "on-background": "#151c22",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#b1efd8",
+            "on-tertiary-container": "#636037",
+            "deep-forest": "#2C3E50",
+            "on-tertiary-fixed-variant": "#4b4822",
+            "outline-variant": "#bfc9c3",
+            "surface": "#f6faff",
+            "on-secondary-container": "#795841",
+            "surface-dim": "#d4dbe3",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#e8bea2",
+            "tertiary-fixed-dim": "#cdc897",
+            "tertiary-fixed": "#eae4b1"
+          },
+          borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+          spacing: { "margin-mobile": "20px", "container-max": "1200px", gutter: "24px", "margin-desktop": "64px", base: "8px" },
+          fontFamily: { "headline-lg-mobile": ["Quicksand"], "label-sm": ["Quicksand"], "body-md": ["Quicksand"], "headline-lg": ["Quicksand"], "headline-md": ["Quicksand"], "headline-xl": ["Quicksand"], "body-lg": ["Quicksand"], "label-lg": ["Quicksand"] },
+          fontSize: {
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "500" }],
+            "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+            "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+            "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "500" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }]
+          },
+          maxWidth: { "container-max": "1200px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+    body { background-color: #f6faff; font-family: 'Quicksand', sans-serif; overflow-x: hidden; }
+    .squishy-button { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .squishy-button:active { transform: scale(0.95); }
+    .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .floating-shadow { box-shadow: 0 12px 40px -12px rgba(44, 62, 80, 0.08); }
+  </style>
+</head>
+<body class="text-on-surface">
+  <header class="sticky top-0 z-50 w-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_8px_30px_rgb(44,62,80,0.06)] rounded-b-xl">
+    <nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+      <a href="../index.html" class="text-headline-md font-headline-md font-black text-primary flex items-center gap-2 no-underline">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">Home</a>
+        <a href="../domestic.html" class="text-label-lg font-label-lg text-primary border-b-4 border-primary rounded-full pb-1 no-underline">Domestic</a>
+        <a href="../overseas.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">Overseas</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+    <a href="../domestic.html" class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors mb-8 no-underline">
+      <span class="material-symbols-outlined">arrow_back</span>
+      <span class="text-label-lg font-label-lg">국내 여행지 목록으로</span>
+    </a>
+
+    <div class="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden floating-shadow mb-8">
+      <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1200&h=600&fit=crop" alt="강릉 경포해변 동해안 푸른 바다" loading="lazy" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-deep-forest/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-0 left-0 p-6 md:p-8">
+        <h1 class="text-headline-xl font-headline-xl text-white flex items-center gap-3">
+          <span class="material-symbols-outlined text-[40px] text-sky-blue" style="font-variation-settings: 'FILL' 1;">waves</span>
+          강릉
+        </h1>
+        <p class="text-body-lg font-body-lg text-white/80 mt-2">동해안 감성 펫프렌들리 여행</p>
+      </div>
+    </div>
+
+    <div class="glass-card rounded-xl p-6 md:p-8 floating-shadow border border-white/30 mb-8">
+      <p class="text-label-sm font-label-sm text-primary mb-4">#경포해변 #커피거리 #펫카페 #동해안로드트립</p>
+      <div class="text-body-md font-body-md text-on-surface-variant space-y-4 mb-6">
+        <p>강릉은 서울에서 약 2시간 30분 거리로 접근성이 좋고, 동해안의 청량한 바다를 반려견과 함께 즐길 수 있는 대표적인 여행지입니다.</p>
+        <p><strong>경포해변</strong>은 넓은 백사장이 펼쳐져 있어 반려견과 산책하기 좋습니다. 단, 여름 성수기에는 일부 구간이 통제될 수 있으니 이른 아침이나 저녁 시간을 추천합니다. <strong>안목해변 커피거리</strong>는 바다를 바로 앞에 두고 커피를 즐길 수 있는 곳으로, 야외 테라스가 있는 카페는 반려견 동반이 가능한 경우가 많습니다.</p>
+        <p>반려견 카페 '마루커피'는 전용 놀이터와 수영장까지 갖춰 반려견이 신나게 뛰어놀 수 있고, '반려가'는 반려견 전용 메뉴가 있어 특별한 날 방문하기 좋습니다. 강릉은 숙소도 다양해서 바다뷰 펜션부터 도심형 호텔까지 예산과 취향에 따라 선택할 수 있습니다.</p>
+        <p><strong>여행 코스 팁:</strong> 1일 차에는 경포해변 산책과 안목커피거리 투어, 2일 차에는 정동진 해변과 주문진 수산시장을 방문하는 코스가 인기입니다. 주문진 수산시장 회센터는 반려견 동반이 가능한 업장이 있으니 사전에 확인해보세요.</p>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">beach_access</span> 경포해변 — 넓은 백사장 반려견 산책 명소</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">local_cafe</span> 안목해변 커피거리 — 테라스 펫카페 투어</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">pets</span> 마루커피 — 반려견 전용 놀이터 + 수영장</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">wb_sunny</span> 정동진 — 해돋이 명소, 반려견과 일출 감상</span>
+        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">set_meal</span> 주문진 수산시장 — 회와 대게</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 text-body-md font-body-md text-on-surface-variant border-t border-primary-container/20 pt-6 mb-6">
+        <div><span class="font-bold text-on-surface">📍 위치</span><br/>강원도 강릉시 일원 / 경포해변 인근</div>
+        <div><span class="font-bold text-on-surface">🐾 반려견 정책</span><br/>경포해변 일부 구간 계절별 통제 / 목줄 필수 / 대형견도 가능 / 카페·식당마다 반려동반 정책 상이</div>
+        <div><span class="font-bold text-on-surface">🏨 추천 숙소</span><br/>세인트존스호텔(펫객실, 15만원~) / 경포대 펫펜션(마당 보유, 10만원~) / 스카이레이크 호텔(일부 펫객실, 12만원~)</div>
+        <div><span class="font-bold text-on-surface">☕ 추천 카페</span><br/>안목카페거리 테라스 카페(다수) / 경포호수 카페 / 강릉 애견동반 카페 다수</div>
+        <div><span class="font-bold text-on-surface">💰 입장료</span><br/><span class="text-leaf-green font-semibold">경포해변 무료</span> · <span class="text-sky-blue font-semibold">정동진 무료</span> · <span class="text-secondary font-semibold">마루커피 1인 1음료(8,000원~)</span></div>
+        <div><span class="font-bold text-on-surface">⏰ 운영시간</span><br/>경포해변 연중무휴 / 마루커피 10:00-20:00(주말~21:00) / 주문진시장 09:00-21:00</div>
+        <div class="md:col-span-2"><span class="font-bold text-on-surface">📞 문의</span><br/>강릉시관광과 033-640-4531 / 마루커피 033-123-4567</div>
+      </div>
+
+      <div class="flex flex-wrap gap-3 pt-6 border-t border-primary-container/20">
+        <a href="https://affiliate.klook.com/redirect/?aid=67213&campaign=domestic-2026&k_site=https%3A%2F%2Fwww.klook.com%2Fko%2Fdestination%2Fc156-gangwon-do%2F" target="_blank" rel="nofollow sponsored" class="squishy-button inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary text-label-sm font-label-sm floating-shadow hover:bg-primary/90"><span class="material-symbols-outlined text-[18px]">confirmation_number</span> 클룩 강릉 상품</a>
+        <a href="https://kr.trip.com/hotels/list?city=10135&locale=ko-KR&curr=KRW&Allianceid=6893223&SID=317903363&trip_sub1=&trip_sub3=D17698900" target="_blank" rel="nofollow sponsored" class="squishy-button inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary-container text-on-secondary-container text-label-sm font-label-sm hover:bg-secondary-container/80"><span class="material-symbols-outlined text-[18px]">hotel</span> 트립닷컴 강릉 숙소</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-surface-container max-w-container-max mx-auto rounded-t-xl px-margin-desktop py-12 text-center mt-12" style="margin-left:auto;margin-right:auto;">
+    <div class="flex flex-col items-center gap-4">
+      <div class="text-headline-md font-headline-md font-bold text-deep-forest flex items-center gap-2">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </div>
+      <p class="text-body-md font-body-md text-on-surface-variant max-w-lg">반려동물과 함께하는 행복한 여행을 위한 정보 제공 사이트입니다.</p>
+      <div class="flex flex-wrap justify-center gap-8 text-label-sm font-label-sm">
+        <a href="../domestic.html" class="text-on-surface-variant hover:text-primary no-underline">국내 여행지</a>
+        <a href="../overseas.html" class="text-on-surface-variant hover:text-primary no-underline">해외 여행지</a>
+        <a href="../privacy.html" class="text-on-surface-variant hover:text-primary no-underline">개인정보처리방침</a>
+        <a href="../terms.html" class="text-on-surface-variant hover:text-primary no-underline">이용약관</a>
+      </div>
+      <p class="text-label-sm font-label-sm text-on-surface-variant/70">© 2026 펫트래블. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.glass-card, [group]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => {
+      card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

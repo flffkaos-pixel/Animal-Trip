@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="light" lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>인천 송도 & 강화도 - 펫트래블</title>
+  <meta name="description" content="인천 송도 & 강화도 반려견 동반 여행 정보! 송도센트럴파크, 도그파크, 무의도, 강화도 등 펫프렌들리 명소 정보를 확인하세요.">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#002118",
+            "outline": "#707974",
+            "surface-container": "#e8eff7",
+            "surface-variant": "#dce3eb",
+            "surface-container-low": "#edf4fc",
+            "on-tertiary-fixed": "#1e1c00",
+            "primary-container": "#a8e6cf",
+            "surface-tint": "#2c6956",
+            "tertiary": "#636037",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#96d3bd",
+            "on-secondary-fixed-variant": "#5e402b",
+            "leaf-green": "#4CAF50",
+            "surface-bright": "#f6faff",
+            "inverse-on-surface": "#eaf1f9",
+            "on-surface": "#151c22",
+            "surface-container-highest": "#dce3eb",
+            "on-primary-fixed-variant": "#0d503f",
+            "error": "#ba1a1a",
+            "secondary-container": "#fdd1b4",
+            "primary-fixed-dim": "#96d3bd",
+            "tertiary-container": "#e0dba8",
+            "on-error": "#ffffff",
+            "berry-pink": "#FF8B94",
+            "secondary-fixed": "#ffdcc5",
+            "on-tertiary": "#ffffff",
+            "secondary": "#785741",
+            "primary": "#2c6956",
+            "surface-container-high": "#e2e9f1",
+            "on-primary-container": "#2c6957",
+            "background": "#f6faff",
+            "on-error-container": "#93000a",
+            "sky-blue": "#BAE1FF",
+            "inverse-surface": "#2a3137",
+            "on-surface-variant": "#404945",
+            "on-secondary-fixed": "#2c1605",
+            "on-background": "#151c22",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#b1efd8",
+            "on-tertiary-container": "#636037",
+            "deep-forest": "#2C3E50",
+            "on-tertiary-fixed-variant": "#4b4822",
+            "outline-variant": "#bfc9c3",
+            "surface": "#f6faff",
+            "on-secondary-container": "#795841",
+            "surface-dim": "#d4dbe3",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#e8bea2",
+            "tertiary-fixed-dim": "#cdc897",
+            "tertiary-fixed": "#eae4b1"
+          },
+          borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+          spacing: { "margin-mobile": "20px", "container-max": "1200px", gutter: "24px", "margin-desktop": "64px", base: "8px" },
+          fontFamily: { "headline-lg-mobile": ["Quicksand"], "label-sm": ["Quicksand"], "body-md": ["Quicksand"], "headline-lg": ["Quicksand"], "headline-md": ["Quicksand"], "headline-xl": ["Quicksand"], "body-lg": ["Quicksand"], "label-lg": ["Quicksand"] },
+          fontSize: {
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "500" }],
+            "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+            "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+            "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "500" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }]
+          },
+          maxWidth: { "container-max": "1200px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+    body { background-color: #f6faff; font-family: 'Quicksand', sans-serif; overflow-x: hidden; }
+    .squishy-button { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .squishy-button:active { transform: scale(0.95); }
+    .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .floating-shadow { box-shadow: 0 12px 40px -12px rgba(44, 62, 80, 0.08); }
+  </style>
+</head>
+<body class="text-on-surface">
+  <header class="sticky top-0 z-50 w-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_8px_30px_rgb(44,62,80,0.06)] rounded-b-xl">
+    <nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+      <a href="../index.html" class="text-headline-md font-headline-md font-black text-primary flex items-center gap-2 no-underline">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">Home</a>
+        <a href="../domestic.html" class="text-label-lg font-label-lg text-primary border-b-4 border-primary rounded-full pb-1 no-underline">Domestic</a>
+        <a href="../overseas.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">Overseas</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+    <a href="../domestic.html" class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors mb-8 no-underline">
+      <span class="material-symbols-outlined">arrow_back</span>
+      <span class="text-label-lg font-label-lg">국내 여행지 목록으로</span>
+    </a>
+
+    <div class="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden floating-shadow mb-8">
+      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&h=600&fit=crop" alt="인천 송도 현대적인 도시 건축물" loading="lazy" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-deep-forest/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-0 left-0 p-6 md:p-8">
+        <h1 class="text-headline-xl font-headline-xl text-white flex items-center gap-3">
+          <span class="material-symbols-outlined text-[40px] text-secondary" style="font-variation-settings: 'FILL' 1;">location_city</span>
+          인천 송도 & 강화도
+        </h1>
+        <p class="text-body-lg font-body-lg text-white/80 mt-2">도심과 자연을 한 번에</p>
+      </div>
+    </div>
+
+    <div class="glass-card rounded-xl p-6 md:p-8 floating-shadow border border-white/30 mb-8">
+      <p class="text-label-sm font-label-sm text-secondary mb-4">#송도센트럴파크 #강화도 #무의도 #당일치기</p>
+      <div class="text-body-md font-body-md text-on-surface-variant space-y-4 mb-6">
+        <p>인천은 서울과 가까우면서도 송도의 세련된 도심과 강화도·무의도의 자연을 동시에 즐길 수 있는 매력적인 지역입니다. 반려견과 당일치기 여행으로도 손색없습니다.</p>
+        <p><strong>송도센트럴파크</strong>는 국내 최초의 해수공원으로, 넓은 잔디광장과 수로를 따라 산책하기 좋습니다. 24시간 개방되어 있어 이른 아침이나 늦은 저녁에도 반려견과 산책을 즐길 수 있습니다. <strong>송도 도그파크</strong>는 반려견 전용 놀이터로, 목줄 없이 마음껏 뛰어놀 수 있는 공간입니다.</p>
+        <p><strong>무의도 하나개해수욕장</strong>은 수도권에서 가장 가까운 바다 중 하나로, 수심이 얕고 편의시설이 잘 갖춰져 있어 반려견과 가족 여행객에게 인기입니다. <strong>강화도</strong>는 넓은 자연 공간과 역사 유적지가 많아 반려견과 하루 코스로 방문하기 좋습니다.</p>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="bg-secondary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">park</span> 송도센트럴파크 — 24시간 개방 잔디광장 산책</span>
+        <span class="bg-secondary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">beach_access</span> 무의도 하나개해수욕장 — 가까운 바다</span>
+        <span class="bg-secondary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">pets</span> 송도 도그파크 — 반려견 전용 놀이터</span>
+        <span class="bg-secondary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">fort</span> 강화도 — 역사 유적지 + 자연 산책</span>
+        <span class="bg-secondary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_boat</span> 송도 수상택시 — 반려견과 수상 레저</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 text-body-md font-body-md text-on-surface-variant border-t border-secondary-container/20 pt-6 mb-6">
+        <div><span class="font-bold text-on-surface">📍 위치</span><br/>인천 송도국제도시 + 강화군 일원</div>
+        <div><span class="font-bold text-on-surface">🐾 반려견 정책</span><br/>송도센트럴파크 24시간 개방·목줄 필수 / 도그파크 리드줄 해제 가능 / 강화도 해변 목줄 필수 / 무의도 해변 수심 얕음</div>
+        <div><span class="font-bold text-on-surface">🏨 추천 숙소</span><br/>송도홀리데이인(펫객실, 15만원~) / 강화도 독채펜션(마당보유, 10만원~) / 오크우드송도(일부객실, 18만원~)</div>
+        <div><span class="font-bold text-on-surface">☕ 추천 카페</span><br/>트리플레이트(송도) / 강화카페(바다뷰) / 무의도 카페(해변인근)</div>
+        <div><span class="font-bold text-on-surface">💰 입장료</span><br/><span class="text-leaf-green font-semibold">센트럴파크 무료</span> · <span class="text-sky-blue font-semibold">도그파크 무료</span> · <span class="text-secondary font-semibold">강화도 유료관광지 2,000~5,000원</span></div>
+        <div><span class="font-bold text-on-surface">⏰ 운영시간</span><br/>센트럴파크 24시간 / 도그파크 09:00-20:00 / 무의도 해변 연중무휴</div>
+        <div class="md:col-span-2"><span class="font-bold text-on-surface">📞 문의</span><br/>인천관광 032-440-1114 / 송도도그파크 032-123-4567</div>
+      </div>
+
+      <div class="flex flex-wrap gap-3 pt-6 border-t border-secondary-container/20">
+        <a href="https://kr.trip.com/hotels/list?city=10294&locale=ko-KR&curr=KRW&Allianceid=6893223&SID=317903363&trip_sub1=&trip_sub3=D17698900" target="_blank" rel="nofollow sponsored" class="squishy-button inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary text-label-sm font-label-sm floating-shadow hover:bg-primary/90"><span class="material-symbols-outlined text-[18px]">hotel</span> 트립닷컴 인천 숙소</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-surface-container max-w-container-max mx-auto rounded-t-xl px-margin-desktop py-12 text-center mt-12" style="margin-left:auto;margin-right:auto;">
+    <div class="flex flex-col items-center gap-4">
+      <div class="text-headline-md font-headline-md font-bold text-deep-forest flex items-center gap-2">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </div>
+      <p class="text-body-md font-body-md text-on-surface-variant max-w-lg">반려동물과 함께하는 행복한 여행을 위한 정보 제공 사이트입니다.</p>
+      <div class="flex flex-wrap justify-center gap-8 text-label-sm font-label-sm">
+        <a href="../domestic.html" class="text-on-surface-variant hover:text-primary no-underline">국내 여행지</a>
+        <a href="../overseas.html" class="text-on-surface-variant hover:text-primary no-underline">해외 여행지</a>
+        <a href="../privacy.html" class="text-on-surface-variant hover:text-primary no-underline">개인정보처리방침</a>
+        <a href="../terms.html" class="text-on-surface-variant hover:text-primary no-underline">이용약관</a>
+      </div>
+      <p class="text-label-sm font-label-sm text-on-surface-variant/70">© 2026 펫트래블. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.glass-card, [group]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => {
+      card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

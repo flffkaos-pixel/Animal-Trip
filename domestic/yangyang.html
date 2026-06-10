@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="light" lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>양양 - 펫트래블</title>
+  <meta name="description" content="양양 반려견 동반 여행 정보! 죽도해변, 서피비치, 낙산사 등 펫프렌들리 명소와 애견동반 숙소 정보를 확인하세요.">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#002118",
+            "outline": "#707974",
+            "surface-container": "#e8eff7",
+            "surface-variant": "#dce3eb",
+            "surface-container-low": "#edf4fc",
+            "on-tertiary-fixed": "#1e1c00",
+            "primary-container": "#a8e6cf",
+            "surface-tint": "#2c6956",
+            "tertiary": "#636037",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#96d3bd",
+            "on-secondary-fixed-variant": "#5e402b",
+            "leaf-green": "#4CAF50",
+            "surface-bright": "#f6faff",
+            "inverse-on-surface": "#eaf1f9",
+            "on-surface": "#151c22",
+            "surface-container-highest": "#dce3eb",
+            "on-primary-fixed-variant": "#0d503f",
+            "error": "#ba1a1a",
+            "secondary-container": "#fdd1b4",
+            "primary-fixed-dim": "#96d3bd",
+            "tertiary-container": "#e0dba8",
+            "on-error": "#ffffff",
+            "berry-pink": "#FF8B94",
+            "secondary-fixed": "#ffdcc5",
+            "on-tertiary": "#ffffff",
+            "secondary": "#785741",
+            "primary": "#2c6956",
+            "surface-container-high": "#e2e9f1",
+            "on-primary-container": "#2c6957",
+            "background": "#f6faff",
+            "on-error-container": "#93000a",
+            "sky-blue": "#BAE1FF",
+            "inverse-surface": "#2a3137",
+            "on-surface-variant": "#404945",
+            "on-secondary-fixed": "#2c1605",
+            "on-background": "#151c22",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#b1efd8",
+            "on-tertiary-container": "#636037",
+            "deep-forest": "#2C3E50",
+            "on-tertiary-fixed-variant": "#4b4822",
+            "outline-variant": "#bfc9c3",
+            "surface": "#f6faff",
+            "on-secondary-container": "#795841",
+            "surface-dim": "#d4dbe3",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#e8bea2",
+            "tertiary-fixed-dim": "#cdc897",
+            "tertiary-fixed": "#eae4b1"
+          },
+          borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+          spacing: { "margin-mobile": "20px", "container-max": "1200px", gutter: "24px", "margin-desktop": "64px", base: "8px" },
+          fontFamily: { "headline-lg-mobile": ["Quicksand"], "label-sm": ["Quicksand"], "body-md": ["Quicksand"], "headline-lg": ["Quicksand"], "headline-md": ["Quicksand"], "headline-xl": ["Quicksand"], "body-lg": ["Quicksand"], "label-lg": ["Quicksand"] },
+          fontSize: {
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "500" }],
+            "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+            "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+            "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "500" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }]
+          },
+          maxWidth: { "container-max": "1200px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+    body { background-color: #f6faff; font-family: 'Quicksand', sans-serif; overflow-x: hidden; }
+    .squishy-button { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .squishy-button:active { transform: scale(0.95); }
+    .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .floating-shadow { box-shadow: 0 12px 40px -12px rgba(44, 62, 80, 0.08); }
+  </style>
+</head>
+<body class="text-on-surface">
+  <header class="sticky top-0 z-50 w-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_8px_30px_rgb(44,62,80,0.06)] rounded-b-xl">
+    <nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+      <a href="../index.html" class="text-headline-md font-headline-md font-black text-primary flex items-center gap-2 no-underline">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">Home</a>
+        <a href="../domestic.html" class="text-label-lg font-label-lg text-primary border-b-4 border-primary rounded-full pb-1 no-underline">Domestic</a>
+        <a href="../overseas.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">Overseas</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+    <a href="../domestic.html" class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors mb-8 no-underline">
+      <span class="material-symbols-outlined">arrow_back</span>
+      <span class="text-label-lg font-label-lg">국내 여행지 목록으로</span>
+    </a>
+
+    <div class="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden floating-shadow mb-8">
+      <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1200&h=600&fit=crop" alt="양양 죽도해변 서핑 비치 풍경" loading="lazy" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-deep-forest/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-0 left-0 p-6 md:p-8">
+        <h1 class="text-headline-xl font-headline-xl text-white flex items-center gap-3">
+          <span class="material-symbols-outlined text-[40px] text-sky-blue" style="font-variation-settings: 'FILL' 1;">surfing</span>
+          양양
+        </h1>
+        <p class="text-body-lg font-body-lg text-white/80 mt-2">서핑과 바다, 반려견과 함께</p>
+      </div>
+    </div>
+
+    <div class="glass-card rounded-xl p-6 md:p-8 floating-shadow border border-white/30 mb-8">
+      <p class="text-label-sm font-label-sm text-sky-blue mb-4">#서피비치 #애견해변 #서핑 #낙산사</p>
+      <div class="text-body-md font-body-md text-on-surface-variant space-y-4 mb-6">
+        <p>양양은 강원도의 숨은 펫프렌들리 여행지입니다. 바다와 숲이 어우러진 자연환경 속에서 반려견과 여유로운 시간을 보낼 수 있습니다. 특히 대형견을 키우는 보호자들에게 더욱 추천하는 곳입니다.</p>
+        <p><strong>죽도해변</strong>은 반려견 목줄 착용 시 입장이 가능한 해변으로, 비교적 한적해 반려견과 바다 산책을 즐기기에 좋습니다. <strong>서피비치</strong>는 서핑으로 유명한 곳으로, 반려견 유모차 대여 서비스가 있어 소형견과도 부담 없이 방문할 수 있습니다.</p>
+        <p><strong>낙산사</strong>는 바다와 어우러진 사찰 풍경이 아름다운 곳입니다. 사찰 내 반려견 동반이 제한될 수 있으니 입구에서 확인 후, 주변 산책로를 이용하는 것을 추천합니다. 가을에는 단풍이 절경을 이룹니다.</p>
+        <p><strong>숙소 추천:</strong> '양양 브루클린펫스테이'는 반려견 수영장과 애견카페를 갖춘 인기 숙소입니다. '서피하우스'는 서퍼 감성이 물씬 나는 펫프렌들리 숙소로, 젊은 커플 여행객에게 인기가 많습니다.</p>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="bg-sky-blue/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">beach_access</span> 죽도해변 — 목줄 착용 시 반려견 입장 가능</span>
+        <span class="bg-sky-blue/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">surfing</span> 서피비치 — 서핑 포인트, 반려견 유모차 대여</span>
+        <span class="bg-sky-blue/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">temple_buddhist</span> 낙산사 — 주변 산책로 반려견 산책 코스</span>
+        <span class="bg-sky-blue/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">pets</span> 브루클린펫스테이 — 반려견 수영장 보유</span>
+        <span class="bg-sky-blue/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">forest</span> 양양 해송숲길 — 숲 속 산책로</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 text-body-md font-body-md text-on-surface-variant border-t border-sky-blue/20 pt-6 mb-6">
+        <div><span class="font-bold text-on-surface">📍 위치</span><br/>강원 양양군 일원 / 죽도해변·낙산사 인근</div>
+        <div><span class="font-bold text-on-surface">🐾 반려견 정책</span><br/>죽도해변 목줄 필수 / 낙산사 내부 출입 제한(주변 산책로 가능) / 대형견 OK / 서핑강사별 반려견 동반 상이</div>
+        <div><span class="font-bold text-on-surface">🏨 추천 숙소</span><br/>양양 애견동반 독채펜션(수영장보유, 12만원~) / 죽도해변 인근 펜션(8만원~) / 오션뷰독채펜션(15만원~)</div>
+        <div><span class="font-bold text-on-surface">☕ 추천 카페</span><br/>죽도해변 카페(바다뷰) / 낙산사 인근 카페 / 서피비치 카페</div>
+        <div><span class="font-bold text-on-surface">💰 입장료</span><br/><span class="text-leaf-green font-semibold">죽도해변 무료</span> · <span class="text-sky-blue font-semibold">낙산사 3,000원</span> · <span class="text-secondary font-semibold">서핑강습 5만원~(반려견 별도 확인)</span></div>
+        <div><span class="font-bold text-on-surface">⏰ 운영시간</span><br/>죽도해변 연중무휴 / 낙산사 09:00-18:00 / 서피비치 09:00-19:00</div>
+        <div class="md:col-span-2"><span class="font-bold text-on-surface">📞 문의</span><br/>양양군청 033-670-2214 / 양양관광 033-670-2397</div>
+      </div>
+
+      <div class="flex flex-wrap gap-3 pt-6 border-t border-sky-blue/20">
+        <a href="https://kr.trip.com/hotels/list?city=13161&locale=ko-KR&curr=KRW&Allianceid=6893223&SID=317903363&trip_sub1=&trip_sub3=D17698900" target="_blank" rel="nofollow sponsored" class="squishy-button inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary text-label-sm font-label-sm floating-shadow hover:bg-primary/90"><span class="material-symbols-outlined text-[18px]">hotel</span> 트립닷컴 양양 숙소</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-surface-container max-w-container-max mx-auto rounded-t-xl px-margin-desktop py-12 text-center mt-12" style="margin-left:auto;margin-right:auto;">
+    <div class="flex flex-col items-center gap-4">
+      <div class="text-headline-md font-headline-md font-bold text-deep-forest flex items-center gap-2">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </div>
+      <p class="text-body-md font-body-md text-on-surface-variant max-w-lg">반려동물과 함께하는 행복한 여행을 위한 정보 제공 사이트입니다.</p>
+      <div class="flex flex-wrap justify-center gap-8 text-label-sm font-label-sm">
+        <a href="../domestic.html" class="text-on-surface-variant hover:text-primary no-underline">국내 여행지</a>
+        <a href="../overseas.html" class="text-on-surface-variant hover:text-primary no-underline">해외 여행지</a>
+        <a href="../privacy.html" class="text-on-surface-variant hover:text-primary no-underline">개인정보처리방침</a>
+        <a href="../terms.html" class="text-on-surface-variant hover:text-primary no-underline">이용약관</a>
+      </div>
+      <p class="text-label-sm font-label-sm text-on-surface-variant/70">© 2026 펫트래블. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.glass-card, [group]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => {
+      card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

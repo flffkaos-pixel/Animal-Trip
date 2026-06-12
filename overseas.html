@@ -119,16 +119,27 @@
   <div class="blob-bg w-72 h-72 bg-tertiary-container bottom-[20%] left-[30%]"></div>
   <div class="blob-bg w-56 h-56 bg-berry-pink top-[60%] right-[10%] opacity-20"></div>
 
-  <header class="sticky top-0 z-40 glass-card rounded-b-2xl mx-auto max-w-container border-t-0 border-x-0" style="margin-left:auto;margin-right:auto;">
-    <div class="flex items-center justify-between px-5 md:px-16 h-16 md:h-20 max-w-container mx-auto">
-      <h1 class="text-headline-md font-bold"><a href="index.html" class="text-primary hover:text-primary/80 no-underline flex items-center gap-2"><span class="material-symbols-outlined text-berry-pink">pets</span> 펫트래블</a></h1>
-      <nav>
-        <ul class="flex items-center gap-1 md:gap-2 list-none m-0 p-0">
-          <li><a href="index.html" class="px-3 py-2 rounded-full text-body-md text-on-surface-variant hover:text-primary hover:bg-primary-container/50 no-underline transition-all duration-200">홈</a></li>
-          <li><a href="domestic.html" class="px-3 py-2 rounded-full text-body-md text-on-surface-variant hover:text-primary hover:bg-primary-container/50 no-underline transition-all duration-200">국내 여행지</a></li>
-          <li><a href="overseas.html" class="px-4 py-2 rounded-full text-body-md font-semibold text-on-primary bg-primary no-underline shadow-sm">해외 여행지</a></li>
-        </ul>
-      </nav>
+  <header class="sticky top-0 z-50 w-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_8px_30px_rgb(44,62,80,0.06)] rounded-b-xl">
+    <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+      <a href="index.html" class="text-headline-md font-headline-md font-black text-primary flex items-center gap-2 no-underline">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">홈</a>
+        <a href="domestic.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">국내 여행지</a>
+        <a href="overseas.html" class="text-label-lg font-label-lg text-primary border-b-2 border-primary pb-1 no-underline">해외 여행지</a>
+      </div>
+      <div class="flex md:hidden">
+        <button id="mobile-menu-btn" class="p-2 rounded-full hover:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-on-surface-variant">menu</span>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden px-margin-mobile pb-4">
+      <a href="index.html" class="block py-2 text-body-md font-body-md text-on-surface-variant hover:text-primary">홈</a>
+      <a href="domestic.html" class="block py-2 text-body-md font-body-md text-on-surface-variant hover:text-primary">국내 여행지</a>
+      <a href="overseas.html" class="block py-2 text-body-md font-body-md text-primary font-bold">해외 여행지</a>
     </div>
   </header>
 

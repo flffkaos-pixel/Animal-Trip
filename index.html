@@ -169,19 +169,31 @@ body { font-family: 'Quicksand', sans-serif; background-color: #f6faff; scroll-b
 </head>
 <body class="text-on-surface">
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_8px_30px_rgb(44,62,80,0.06)] rounded-b-xl px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto flex justify-between items-center w-full">
-  <div class="flex items-center gap-4">
-    <span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">pets</span>
-    <span class="text-headline-md font-headline-md font-black text-primary tracking-tight">펫트래블</span>
-  </div>
-  <nav class="hidden md:flex items-center gap-gutter">
-    <a class="text-label-lg font-label-lg text-primary border-b-4 border-primary rounded-full pb-1 transition-all duration-300" href="index.html">홈</a>
-    <a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-all duration-300 px-3 py-1 rounded-full" href="domestic.html">국내 여행지</a>
-    <a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-all duration-300 px-3 py-1 rounded-full" href="overseas.html">해외 여행지</a>
+<header class="sticky top-0 z-50 w-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_8px_30px_rgb(44,62,80,0.06)] rounded-b-xl">
+  <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+    <a href="index.html" class="text-headline-md font-headline-md font-black text-primary flex items-center gap-2 no-underline">
+      <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+      펫트래블
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-label-lg font-label-lg text-primary border-b-2 border-primary pb-1 no-underline">홈</a>
+      <a href="domestic.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">국내 여행지</a>
+      <a href="overseas.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">해외 여행지</a>
+    </div>
+    <div class="flex md:hidden">
+      <button id="mobile-menu-btn" class="p-2 rounded-full hover:bg-surface-container transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant">menu</span>
+      </button>
+    </div>
   </nav>
+  <div id="mobile-menu" class="hidden md:hidden px-margin-mobile pb-4">
+    <a href="index.html" class="block py-2 text-body-md font-body-md text-primary font-bold">홈</a>
+    <a href="domestic.html" class="block py-2 text-body-md font-body-md text-on-surface-variant hover:text-primary">국내 여행지</a>
+    <a href="overseas.html" class="block py-2 text-body-md font-body-md text-on-surface-variant hover:text-primary">해외 여행지</a>
+  </div>
 </header>
 
-<main class="pt-24">
+<main>
 
 <!-- Hero Section -->
 <section class="relative min-h-[80vh] flex items-center px-margin-mobile md:px-margin-desktop overflow-hidden">
@@ -219,7 +231,7 @@ body { font-family: 'Quicksand', sans-serif; background-color: #f6faff; scroll-b
       </div>
       <h3 class="font-headline-md text-headline-md mb-4 text-deep-forest">반려동물 동반 숙소</h3>
       <p class="font-body-md text-body-md text-on-surface-variant">전국 펫프렌들리 펜션, 호텔, 리조트 정보를 제공합니다. 반려견 전용 수영장부터 넓은 마당이 있는 독채까지, 반려동물과 함께 편안히 머물 수 있는 공간을 소개합니다.</p>
-      <a class="text-primary font-bold text-label-lg inline-flex items-center gap-1 hover:underline mt-4" href="domestic.html">자세히 보기 <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+      <a class="text-primary font-bold text-label-lg inline-flex items-center gap-1 hover:underline mt-4" href="domestic/pet-accommodations.html">자세히 보기 <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
     </article>
     <article class="bg-surface-container-lowest p-8 rounded-xl kawaii-shadow border border-surface-variant/30 hover-lift">
       <div class="w-16 h-16 bg-secondary-container/30 rounded-full flex items-center justify-center mb-6">
@@ -227,7 +239,7 @@ body { font-family: 'Quicksand', sans-serif; background-color: #f6faff; scroll-b
       </div>
       <h3 class="font-headline-md text-headline-md mb-4 text-deep-forest">펫카페 &amp; 맛집</h3>
       <p class="font-body-md text-body-md text-on-surface-variant">반려동물과 함께 방문할 수 있는 카페와 식당을 소개합니다. 반려견 전용 메뉴가 있는 곳, 야외 테라스에서 반려견과 함께 식사할 수 있는 맛집까지 골라 알려드립니다.</p>
-      <a class="text-primary font-bold text-label-lg inline-flex items-center gap-1 hover:underline mt-4" href="domestic.html">자세히 보기 <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+      <a class="text-primary font-bold text-label-lg inline-flex items-center gap-1 hover:underline mt-4" href="domestic/pet-cafe-restaurants.html">자세히 보기 <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
     </article>
     <article class="bg-surface-container-lowest p-8 rounded-xl kawaii-shadow border border-surface-variant/30 hover-lift">
       <div class="w-16 h-16 bg-tertiary-container/30 rounded-full flex items-center justify-center mb-6">
@@ -235,7 +247,7 @@ body { font-family: 'Quicksand', sans-serif; background-color: #f6faff; scroll-b
       </div>
       <h3 class="font-headline-md text-headline-md mb-4 text-deep-forest">펫 허용 관광지</h3>
       <p class="font-body-md text-body-md text-on-surface-variant">반려견 출입 가능한 해변, 공원, 산책로를 알려드립니다. 반려견과 함께 산책하기 좋은 국립공원, 해변, 둘레길 정보와 함께 출입 제한 사항도 꼼꼼히 안내합니다.</p>
-      <a class="text-primary font-bold text-label-lg inline-flex items-center gap-1 hover:underline mt-4" href="domestic.html">자세히 보기 <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+      <a class="text-primary font-bold text-label-lg inline-flex items-center gap-1 hover:underline mt-4" href="domestic/pet-attractions.html">자세히 보기 <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
     </article>
     <article class="bg-surface-container-lowest p-8 rounded-xl kawaii-shadow border border-surface-variant/30 hover-lift">
       <div class="w-16 h-16 bg-sky-blue/30 rounded-full flex items-center justify-center mb-6">
@@ -466,6 +478,14 @@ window.addEventListener('scroll', () => {
     header.classList.add('shadow-[0_8px_30px_rgb(44,62,80,0.06)]');
   }
 });
+
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+}
 
 const observerOptions = { threshold: 0.1 };
 const observer = new IntersectionObserver((entries) => {

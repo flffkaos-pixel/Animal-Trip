@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html class="light" lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>태안 - 펫트래블</title>
+  <meta name="description" content="태안 반려견 동반 여행 정보! 꽃지해변, 안면도, 천리포수목원 등 펫프렌들리 명소와 애견동반 숙소 정보를 확인하세요.">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#002118",
+            "outline": "#707974",
+            "surface-container": "#e8eff7",
+            "surface-variant": "#dce3eb",
+            "surface-container-low": "#edf4fc",
+            "on-tertiary-fixed": "#1e1c00",
+            "primary-container": "#a8e6cf",
+            "surface-tint": "#2c6956",
+            "tertiary": "#636037",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#96d3bd",
+            "on-secondary-fixed-variant": "#5e402b",
+            "leaf-green": "#4CAF50",
+            "surface-bright": "#f6faff",
+            "inverse-on-surface": "#eaf1f9",
+            "on-surface": "#151c22",
+            "surface-container-highest": "#dce3eb",
+            "on-primary-fixed-variant": "#0d503f",
+            "error": "#ba1a1a",
+            "secondary-container": "#fdd1b4",
+            "primary-fixed-dim": "#96d3bd",
+            "tertiary-container": "#e0dba8",
+            "on-error": "#ffffff",
+            "berry-pink": "#FF8B94",
+            "secondary-fixed": "#ffdcc5",
+            "on-tertiary": "#ffffff",
+            "secondary": "#785741",
+            "primary": "#2c6956",
+            "surface-container-high": "#e2e9f1",
+            "on-primary-container": "#2c6957",
+            "background": "#f6faff",
+            "on-error-container": "#93000a",
+            "sky-blue": "#BAE1FF",
+            "inverse-surface": "#2a3137",
+            "on-surface-variant": "#404945",
+            "on-secondary-fixed": "#2c1605",
+            "on-background": "#151c22",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#b1efd8",
+            "on-tertiary-container": "#636037",
+            "deep-forest": "#2C3E50",
+            "on-tertiary-fixed-variant": "#4b4822",
+            "outline-variant": "#bfc9c3",
+            "surface": "#f6faff",
+            "on-secondary-container": "#795841",
+            "surface-dim": "#d4dbe3",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#e8bea2",
+            "tertiary-fixed-dim": "#cdc897",
+            "tertiary-fixed": "#eae4b1"
+          },
+          borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+          spacing: { "margin-mobile": "20px", "container-max": "1200px", gutter: "24px", "margin-desktop": "64px", base: "8px" },
+          fontFamily: { "headline-lg-mobile": ["Quicksand"], "label-sm": ["Quicksand"], "body-md": ["Quicksand"], "headline-lg": ["Quicksand"], "headline-md": ["Quicksand"], "headline-xl": ["Quicksand"], "body-lg": ["Quicksand"], "label-lg": ["Quicksand"] },
+          fontSize: {
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "500" }],
+            "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+            "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+            "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "500" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }]
+          },
+          maxWidth: { "container-max": "1200px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; }
+    body { background-color: #f6faff; font-family: 'Quicksand', sans-serif; overflow-x: hidden; }
+    .squishy-button { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .squishy-button:active { transform: scale(0.95); }
+    .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .floating-shadow { box-shadow: 0 12px 40px -12px rgba(44, 62, 80, 0.08); }
+  </style>
+</head>
+<body class="text-on-surface">
+  <header class="sticky top-0 z-50 w-full bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_8px_30px_rgb(44,62,80,0.06)] rounded-b-xl">
+    <nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+      <a href="../index.html" class="text-headline-md font-headline-md font-black text-primary flex items-center gap-2 no-underline">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">홈</a>
+        <a href="../domestic.html" class="text-label-lg font-label-lg text-primary border-b-4 border-primary rounded-full pb-1 no-underline">국내 여행지</a>
+        <a href="../overseas.html" class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 no-underline">해외 여행지</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+    <a href="../domestic.html" class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors mb-8 no-underline">
+      <span class="material-symbols-outlined">arrow_back</span>
+      <span class="text-label-lg font-label-lg">국내 여행지 목록으로</span>
+    </a>
+
+    <div class="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden floating-shadow mb-8">
+      <img src="https://images.unsplash.com/photo-1559827291-2650c46f8c9e?w=1200&h=600&fit=crop" alt="태안 꽃지해변 서해 일몰 풍경" loading="lazy" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-deep-forest/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-0 left-0 p-6 md:p-8">
+        <h1 class="text-headline-xl font-headline-xl text-white flex items-center gap-3">
+          <span class="material-symbols-outlined text-[40px] text-sky-blue" style="font-variation-settings: 'FILL' 1;">beach_access</span>
+          태안
+        </h1>
+        <p class="text-body-lg font-body-lg text-white/80 mt-2">서해의 낭만적인 일몰과 고운 모래사장</p>
+      </div>
+    </div>
+
+    <div class="glass-card rounded-xl p-6 md:p-8 floating-shadow border border-white/30 mb-8">
+      <p class="text-label-sm font-label-sm text-sky-blue mb-4">#꽃지해변 #안면도 #천리포수목원 #서해일몰</p>
+      <div class="text-body-md font-body-md text-on-surface-variant space-y-4 mb-6">
+        <p>태안은 충청남도 서해안의 대표적인 해변 휴양지로, 아름다운 일몰과 드넓은 갯벌, 고운 모래사장이 매력적인 곳입니다. 반려견과 함께 여유롭게 산책하며 서해의 정취를 만끽하기에 더할 나위 없는 여행지입니다.</p>
+        <p><strong>꽃지해변</strong>은 태안의 대표 해변으로, 할미바위와 할아버지바위 사이로 지는 일몰이 장관입니다. 해변은 넓고 완만해 반려견과 산책하기 좋으며, 비수기에는 한적하게 바다를 즐길 수 있습니다. 목줄을 반드시 착용해야 합니다.</p>
+        <p><strong>안면도</strong>는 태안군 남부에 위치한 섬으로, 드라이브 코스와 자연경관이 빼어납니다. 안면도 자연휴양림 내 일부 산책로는 반려견 동반이 가능하며, 솔숲 사이로 난 길을 따라 산책하기 좋습니다.</p>
+        <p><strong>천리포수목원</strong>은 사계절 아름다운 정원을 자랑하는 곳입니다. 반려견 동반이 제한될 수 있으므로 사전 확인이 필요하며, 수목원 주변 산책로를 이용하는 것을 추천합니다.</p>
+        <p><strong>숙소 추천:</strong> '태안 꽃지펜션'은 해변과 가까운 독채 펜션으로, 전용 마당이 있어 반려견이 뛰어놀기 좋습니다. '안면도 리솜오션캐슬'은 일부 객실에서 반려견 동반이 가능한 프리미엄 리조트입니다.</p>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="bg-sky-blue/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">beach_access</span> 꽃지해변 — 목줄 착용 시 반려견 산책 가능</span>
+        <span class="bg-sky-blue/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">forest</span> 안면도휴양림 — 일부 산책로 반려견 동반</span>
+        <span class="bg-sky-blue/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">landscape</span> 천리포수목원 — 사전 확인 필수</span>
+        <span class="bg-sky-blue/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">pets</span> 꽃지펜션 — 전용마당 보유 독채펜션</span>
+        <span class="bg-sky-blue/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">local_cafe</span> 태안 애견카페 — 바다뷰 테라스</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 text-body-md font-body-md text-on-surface-variant border-t border-sky-blue/20 pt-6 mb-6">
+        <div><span class="font-bold text-on-surface">📍 위치</span><br/>충남 태안군 일원 / 꽃지해변·안면도 인근</div>
+        <div><span class="font-bold text-on-surface">🐾 반려견 정책</span><br/>꽃지해변 목줄 필수 / 안면도휴양림 산책로 반려견 동반 가능 / 천리포수목원 내부 출입 제한(주변 산책로 가능) / 대형견 OK</div>
+        <div><span class="font-bold text-on-surface">🏨 추천 숙소</span><br/>꽃지펜션(전용마당, 10만원~) / 리솜오션캐슬(펫객실, 20만원~) / 바다뷰 독채펜션(12만원~)</div>
+        <div><span class="font-bold text-on-surface">☕ 추천 카페</span><br/>꽃지해변 카페(일몰뷰) / 안면도 카페 / 태안 애견카페</div>
+        <div><span class="font-bold text-on-surface">💰 입장료</span><br/><span class="text-leaf-green font-semibold">꽃지해변 무료</span> · <span class="text-sky-blue font-semibold">안면도휴양림 2,000원</span> · <span class="text-secondary font-semibold">천리포수목원 9,000원(반려견 동반 확인 필수)</span></div>
+        <div><span class="font-bold text-on-surface">⏰ 운영시간</span><br/>꽃지해변 연중무휴 / 안면도휴양림 09:00-18:00 / 천리포수목원 09:00-17:00</div>
+        <div class="md:col-span-2"><span class="font-bold text-on-surface">📞 문의</span><br/>태안군청 041-670-2000 / 태안관광 041-670-2514</div>
+      </div>
+
+      <div class="flex flex-wrap gap-3 pt-6 border-t border-sky-blue/20">
+        <a href="https://kr.trip.com/hotels/list?city=13165&locale=ko-KR&curr=KRW&Allianceid=6893223&SID=317903363&trip_sub1=&trip_sub3=D17698900" target="_blank" rel="nofollow sponsored" class="squishy-button inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary text-label-sm font-label-sm floating-shadow hover:bg-primary/90"><span class="material-symbols-outlined text-[18px]">hotel</span> 트립닷컴 태안 숙소</a>
+      </div>
+    </div>
+    <section class="mb-14">
+      <h2 class="text-headline-lg font-headline-lg text-deep-forest mb-2 flex items-center gap-3">
+        <span class="material-symbols-outlined text-[32px] text-primary" style="font-variation-settings: 'FILL' 1;">map</span>
+        지역별 관광지
+      </h2>
+      <p class="text-body-md font-body-md text-on-surface-variant mb-6 ml-1">태안은 크게 3개 권역으로 나누어 살펴보세요.</p>
+
+      <h3 class="text-headline-md font-headline-md text-deep-forest mb-4 ml-1 flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">location_on</span>
+        꽃지해변 · 안면도 권역
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop" alt="꽃지해변" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">꽃지해변</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">할미·할아버지바위 사이로 지는 서해 일몰이 장관인 태안 대표 해변, 반려견 산책 명소입니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">일몰명소</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">해변산책</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 가능</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=400&fit=crop" alt="안면도 자연휴양림" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">안면도 자연휴양림</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">울창한 솔숲 사이 산책로에서 반려견과 힐링, 일부 탐방로는 반려견 동반이 가능합니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">휴양림</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">솔숲산책</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 동반</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1502920919420-0c7b9e1e7b0a?w=600&h=400&fit=crop" alt="안면도 드라이브" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">안면도 해안드라이브</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">안면도를 한 바퀴 도는 해안 드라이브 코스, 반려견과 함께 차창 밖 펼쳐진 서해 풍경을 즐겨보세요.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">드라이브</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">해안도로</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 동반</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="text-headline-md font-headline-md text-deep-forest mb-4 ml-1 flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">location_on</span>
+        천리포수목원 권역
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1518839641-2a3b4c5d6e7f?w=600&h=400&fit=crop" alt="천리포수목원" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">천리포수목원</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">사계절 아름다운 정원을 자랑하는 수목원, 반려견 동반은 제한될 수 있으니 사전 확인이 필요합니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">정원</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">사계절</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">포토존</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1496192734-6f8e3b2c5a1d?w=600&h=400&fit=crop" alt="천리포해변" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">천리포해변</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">수목원 인근에 위치한 한적한 해변, 반려견과 조용히 바다를 즐기며 여유로운 산책을 즐겨보세요.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">한적한</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">해변산책</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">숨은명소</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?w=600&h=400&fit=crop" alt="천리포" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">천리포 마을</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">조용한 어촌 마을의 정취를 느낄 수 있는 천리포, 반려견과 함께하는 힐링 워킹 코스로 추천합니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">어촌마을</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">힐링</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">산책코스</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="text-headline-md font-headline-md text-deep-forest mb-4 ml-1 flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">location_on</span>
+        만리포 · 몽산포 권역
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1533745860048-2c3d4e5f6a7b?w=600&h=400&fit=crop" alt="만리포해변" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">만리포해변</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">길게 펼쳐진 백사장과 맑은 서해 바다, 반려견과 함께 즐기는 태안의 대표 해변입니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">백사장</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">서해안</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">가족여행</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="몽산포해변" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">몽산포해변</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">만리포보다 한적한 해변으로 반려견과 조용히 산책하며 노을을 감상하기 좋은 곳입니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">한적한</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">노을명소</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 산책</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1490730086-4b5c6d7e8f9a?w=600&h=400&fit=crop" alt="몽산포 갯벌" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">몽산포 갯벌체험</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">드넓은 갯벌에서 조개잡이와 갯벌 체험을 즐기며 반려견과 특별한 추억을 만들어보세요.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">갯벌</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">조개잡이</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">가족체험</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mb-14">
+      <h2 class="text-headline-lg font-headline-lg text-deep-forest mb-6 flex items-center gap-3">
+        <span class="material-symbols-outlined text-[32px] text-secondary" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+        추천 카페
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1498809434-5f5e6c3d1b2a?w=600&h=400&fit=crop" alt="꽃지해변 카페" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">꽃지해변 카페</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">서해 일몰을 바라보며 커피를 즐기는 감성 카페, 석양이 지는 시간이 특히 아름답습니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">일몰뷰</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">오션뷰</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 환영</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555398213-db4e8c5b6a2f?w=600&h=400&fit=crop" alt="안면도 카페" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">안면도 솔숲카페</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">안면도 솔숲 사이에 자리한 조용한 카페, 자연 속에서 힐링하는 특별한 오후를 보내세요.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">숲속카페</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">힐링</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 가능</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&h=400&fit=crop" alt="태안 애견카페" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">태안 애견카페</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">반려견 전용 놀이터와 야외 테라스가 있는 카페, 반려견이 신나게 뛰어놀 수 있는 공간입니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">애견놀이터</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">테라스</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">수제간식</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&h=400&fit=crop" alt="만리포 카페" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">만리포 카페</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">만리포해변을 조망하는 카페, 시원한 바다를 바라보며 커피 한 잔의 여유를 즐겨보세요.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">오션뷰</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">감성카페</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 가능</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&h=400&fit=crop" alt="몽산포 카페" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">몽산포 카페</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">몽산포해변 인근 작은 카페, 조용한 음악과 함께 노을 지는 바다를 바라보며 힐링하세요.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">노을뷰</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">조용한</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 환영</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mb-14">
+      <h2 class="text-headline-lg font-headline-lg text-deep-forest mb-6 flex items-center gap-3">
+        <span class="material-symbols-outlined text-[32px] text-berry-pink" style="font-variation-settings: 'FILL' 1;">ramen_dining</span>
+        맛집 추천
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop" alt="태안 게국지" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">태안 게국지</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">태안의 대표 향토 음식 게국지, 시원하고 얼큰한 국물이 속을 풀어주는 일품 요리입니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">게국지</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">향토음식</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 가능</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&h=400&fit=crop" alt="안면도 해물찜" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">안면도 해물찜</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">싱싱한 해산물이 가득한 안면도 해물찜, 매콤한 양념이 입맛을 돋우는 인기 맛집입니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">해물찜</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">매콤</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">푸짐한</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=600&h=400&fit=crop" alt="태안 꽃게탕" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">꽃게탕 전문점</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">서해안에서 잡은 싱싱한 꽃게로 끓인 시원한 꽃게탕, 반려견과 함께 야외석에서 식사 가능합니다.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">꽃게탕</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">시원한</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">야외테라스</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1515516969-d4008cc6241a?w=600&h=400&fit=crop" alt="태안 조개구이" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">조개구이 무한리필</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">다양한 조개를 숯불에 구워 먹는 무한리필 맛집, 반려견과 함께 해변 근처에서 즐겨보세요.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">조개구이</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">무한리필</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">가족식사</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mb-14">
+      <h2 class="text-headline-lg font-headline-lg text-deep-forest mb-6 flex items-center gap-3">
+        <span class="material-symbols-outlined text-[32px] text-berry-pink" style="font-variation-settings: 'FILL' 1;">kitesurfing</span>
+        즐길 거리
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?w=600&h=400&fit=crop" alt="서해 일몰" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">서해 일몰 감상</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">꽃지해변 할미·할아버지바위 사이로 지는 황홀한 서해 일몰, 반려견과 함께하는 낭만적인 저녁.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">일몰</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">낭만</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">포토스팟</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop" alt="갯벌체험" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">갯벌 체험</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">태안의 드넓은 갯벌에서 조개잡이와 갯벌 체험을 즐기며 특별한 추억을 만들어보세요.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">갯벌</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">조개잡이</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">가족체험</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1504198255-8c9d0e1f2a3b?w=600&h=400&fit=crop" alt="안면도 드라이브" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">안면도 해안드라이브</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">안면도 해안도로를 따라 드라이브하며 펼쳐지는 서해의 풍경을 반려견과 함께 즐겨보세요.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">드라이브</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">해안도로</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 동반</span>
+            </div>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600&h=400&fit=crop" alt="서해 갯벌 산책" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">해변 산책 &amp; 피크닉</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">꽃지·만리포·몽산포 해변에서 반려견과 함께 산책하며 바다를 바라보는 여유로운 피크닉을 즐겨보세요.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">해변산책</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">피크닉</span>
+              <span class="text-label-sm font-label-sm bg-sky-blue/30 px-3 py-1 rounded-full">반려견 동반</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mb-14">
+      <h2 class="text-headline-lg font-headline-lg text-deep-forest mb-6 flex items-center gap-3">
+        <span class="material-symbols-outlined text-[32px] text-leaf-green" style="font-variation-settings: 'FILL' 1;">hotel</span>
+        숙소 추천
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1549638441-b787d2e1f852?w=600&h=400&fit=crop" alt="꽃지펜션" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">꽃지해변 펜션</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">꽃지해변 도보 5분 거리 독채 펜션, 전용 마당에서 반려견이 마음껏 뛰어놀 수 있습니다.</p>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">독채</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">전용마당</span>
+            </div>
+            <p class="text-body-md font-body-md text-primary font-bold">~ 10만원 / 1박</p>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop" alt="리솜오션캐슬" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">안면도 리솜오션캐슬</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">일부 객실에서 반려견 동반이 가능한 프리미엄 리조트, 오션뷰와 다양한 부대시설을 즐기세요.</p>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">리조트</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">오션뷰</span>
+            </div>
+            <p class="text-body-md font-body-md text-primary font-bold">~ 20만원 / 1박</p>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&h=400&fit=crop" alt="만리포 펜션" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">만리포 바다펜션</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">만리포해변 바로 앞 펜션, 테라스에서 서해 일몰을 감상하며 반려견과 여유로운 휴식을 즐기세요.</p>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">오션뷰</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">일몰</span>
+            </div>
+            <p class="text-body-md font-body-md text-primary font-bold">~ 12만원 / 1박</p>
+          </div>
+        </article>
+        <article class="glass-card rounded-xl overflow-hidden floating-shadow border border-white/30 group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&h=400&fit=crop" alt="태안 게하" loading="lazy" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+              <h3 class="text-headline-md font-headline-md text-white">태안 게스트하우스</h3>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-body-md font-body-md text-on-surface-variant mb-3">합리적인 가격의 반려견 동반 게스트하우스, 태안 군내 주요 관광지 접근성이 좋습니다.</p>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-label-sm font-label-sm bg-primary-container/50 px-3 py-1 rounded-full">게스트하우스</span>
+              <span class="text-label-sm font-label-sm bg-secondary-container/50 px-3 py-1 rounded-full">가성비</span>
+            </div>
+            <p class="text-body-md font-body-md text-primary font-bold">~ 5만원 / 1박</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-surface-container max-w-container-max mx-auto rounded-t-xl px-margin-desktop py-12 text-center mt-12" style="margin-left:auto;margin-right:auto;">
+    <div class="flex flex-col items-center gap-4">
+      <div class="text-headline-md font-headline-md font-bold text-deep-forest flex items-center gap-2">
+        <span class="material-symbols-outlined text-leaf-green" style="font-variation-settings: 'FILL' 1;">pets</span>
+        펫트래블
+      </div>
+      <p class="text-body-md font-body-md text-on-surface-variant max-w-lg">반려동물과 함께하는 행복한 여행을 위한 정보 제공 사이트입니다.</p>
+      <div class="flex flex-wrap justify-center gap-8 text-label-sm font-label-sm">
+        <a href="../domestic.html" class="text-on-surface-variant hover:text-primary no-underline">국내 여행지</a>
+        <a href="../overseas.html" class="text-on-surface-variant hover:text-primary no-underline">해외 여행지</a>
+        <a href="../privacy.html" class="text-on-surface-variant hover:text-primary no-underline">개인정보처리방침</a>
+        <a href="../terms.html" class="text-on-surface-variant hover:text-primary no-underline">이용약관</a>
+      </div>
+      <p class="text-label-sm font-label-sm text-on-surface-variant/70">© 2026 펫트래블. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.glass-card, [group]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => {
+      card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

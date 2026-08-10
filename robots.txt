@@ -1,6 +1,13 @@
 User-agent: *
 Allow: /
+Allow: /research/
 Disallow: /privacy.html
 Disallow: /terms.html
 
-Sitemap: https://pet-travel.kr/sitemap.xml
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://animal-trip.pages.dev/sitemap.xml

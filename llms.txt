@@ -1,0 +1,9 @@
+# 펫트래블 Pet Travel | 반려동물과 함께 떠나는 행복한 여행
+
+> 반려동물과 함께 떠나는 국내외 여행 정보! 제주도, 부산, 강릉 등 반려견 동반 여행지부터 펫프렌들리 호텔, 펜션, 애견카페까지 한눈에 비교하세요.
+
+Canonical URL: https://animal-trip.pages.dev
+Language: ko
+
+## Pages
+- https://animal-trip.pages.dev/ : 펫트래블 Pet Travel | 반려동물과 함께 떠나는 행복한 여행

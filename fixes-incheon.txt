@@ -1,0 +1,30 @@
+6	  <title>인천 월미도 & 강화도 - 펫트래블</title>
+7	  <meta name="description" content="인천 월미도 & 강화도 반려견 동반 여행 정보! 월미도 센트럴파크, 애견센터, 무의도 등 펫프렌들리 명소 정보를 확인하세요.">
+101	        펫트래블
+114	      <span class="text-label-lg font-label-lg">국내 여행지 목록으로</span>
+118	      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&h=600&fit=crop" alt="인천 월미도 야경과 바다" loading="lazy" class="w-full h-full object-cover">
+123	          인천 월미도 & 강화도        </h1>
+124	        <p class="text-body-lg font-body-lg text-white/80 mt-2">도심과 섬, 자연을 한 번에</p>
+129	      <p class="text-label-sm font-label-sm text-secondary mb-4">#월미도센트럴파크 #강화도 #무의도 #당일치기</p>
+131	        <p>인천은 서울과 가까우면서도 월미도와 강화도라는 자연을 동시에 즐길 수 있는 매력적인 지역입니다. 반려견과 당일치기 여행으로 손색없습니다.</p>
+132	        <p><strong>월미도센트럴파크</strong>는 국내 최대의 해수공원으로, 넓은 잔디광장과 산책로를 따라 산책하기 좋습니다. 24시간 개방되어 있어 이른 아침이나 늦은 저녁에도 반려견과 산책을 즐길 수 있습니다. <strong>월미도 애견센터</strong>는 반려견 전용 센터로 목줄 없이 마음껏 뛰어놀 수 있는 공간입니다.</p>
+133	        <p><strong>무의도 하나개해수욕장</strong>은 수도권에서 가장 가까운 바다 중 하나로 수심이 얕고 편의시설이 갖춰져 있어 반려견과 가족 여행객에게 인기입니다. <strong>강화도</strong>는 넓은 자연 공간과 역사 유적지가 많아 반려견과 함께 코스로 방문하기 좋습니다.</p>
+137	        <span class="bg-secondary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">park</span> 월미도센트럴파크 24시간 개방 잔디광장 산책</span>
+138	        <span class="bg-secondary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">beach_access</span> 무의도 하나개해수욕장 가까운 바다</span>
+139	        <span class="bg-secondary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">pets</span> 월미도 애견센터 반려견 전용 센터</span>
+140	        <span class="bg-secondary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">fort</span> 강화도 역사 유적지 + 자연 산책</span>
+141	        <span class="bg-secondary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_boat</span> 월미도 해상케이블카 반려견과 해상 여행</span>
+145	        <div><span class="font-bold text-on-surface">📍 위치</span><br/>인천 중구 제주시 + 강화군 일원</div>
+146	        <div><span class="font-bold text-on-surface">🐾 반려견 정책</span><br/>월미도센트럴파크 24시간 개방·목줄 필수 / 애견센터 리드줄 해제 가능 / 강화도 일부 목줄 필수 / 무의도 일부 수심 얕음</div>
+147	        <div><span class="font-bold text-on-surface">🏨 추천 숙소</span><br/>월미도 파라다이스시티(스위트 15만원~) / 강화 독채펜션(마당보유, 10만원~) / 월미도 오션뷰 호텔(일반객실, 18만원~)</div>
+148	        <div><span class="font-bold text-on-surface">☕ 추천 카페</span><br/>월미도 오션뷰 카페 / 강화 카페(바다뷰) / 무의도 카페(야외 테라스)</div>
+149	        <div><span class="font-bold text-on-surface">💰 입장료</span><br/><span class="text-leaf-green font-semibold">센트럴파크 무료</span> · <span class="text-sky-blue font-semibold">애견센터 무료</span> · <span class="text-secondary font-semibold">강화도 유료관광지 2,000~5,000원</span></div>
+150	        <div><span class="font-bold text-on-surface">⏰ 운영시간</span><br/>센트럴파크 24시간 / 애견센터 09:00-20:00 / 무의도 일부 연중무휴</div>
+151	        <div class="md:col-span-2"><span class="font-bold text-on-surface">📞 문의</span><br/>인천관광 032-440-1114</div>
+649	        펫트래블
+651	      <p class="text-body-md font-body-md text-on-surface-variant max-w-lg">반려동물과 함께하는 행복한 여행을 위한 정보 제공 사이트입니다.</p>
+653	        <a href="../domestic.html" class="text-on-surface-variant hover:text-primary no-underline">국내 여행지</a>
+654	        <a href="../overseas.html" class="text-on-surface-variant hover:text-primary no-underline">해외 여행지</a>
+655	        <a href="../privacy.html" class="text-on-surface-variant hover:text-primary no-underline">개인정보처리방침</a>
+656	        <a href="../terms.html" class="text-on-surface-variant hover:text-primary no-underline">이용약관</a>
+658	      <p class="text-label-sm font-label-sm text-on-surface-variant/70">© 2026 펫트래블. All Rights Reserved.</p>

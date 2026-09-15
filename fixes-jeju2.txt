@@ -1,0 +1,2 @@
+141	        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">cottage</span> 애견동반 독채 펜션</span>
+143	        <span class="bg-primary-container/30 px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-primary-container flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">ferry</span> 우도행 여객선 반려견과 함께 여행</span>

@@ -13,7 +13,7 @@
         iframe.style.display = 'none';
         iframe.style.width = '0';
         iframe.style.height = '0';
-        iframe.src = 'https://affiliate.klook.com/redirect/?aid=67213&campaign=' + getCampaign();
+        iframe.src = 'https://affiliate.klook.com/redirect/?aid=123697&aff_adid=1431940&campaign=' + getCampaign();
         document.body.appendChild(iframe);
         var tid = setTimeout(function() {
           if (document.body.contains(iframe)) document.body.removeChild(iframe);

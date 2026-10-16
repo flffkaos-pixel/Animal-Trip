@@ -1,9 +1,51 @@
-# 펫트래블 Pet Travel | 반려동물과 함께 떠나는 행복한 여행
+# 펫트래블 Animal Trip | 반려동물과 함께 떠나는 행복한 여행
 
-> 반려동물과 함께 떠나는 국내외 여행 정보! 제주도, 부산, 강릉 등 반려견 동반 여행지부터 펫프렌들리 호텔, 펜션, 애견카페까지 한눈에 비교하세요.
+> 반려동물과 함께 떠나는 국내외 여행 정보. 제주·부산·강릉·경주 등 국내 여행지와 일본·대만·태국 등 해외 여행지별 반려동물 동반 정보, 펫프렌들리 숙소·애견카페·관광지, 교통·검역 규정까지 정리합니다.
 
 Canonical URL: https://animal-trip.pages.dev
 Language: ko
+Last-Updated: 2026-09-18
 
-## Pages
-- https://animal-trip.pages.dev/ : 펫트래블 Pet Travel | 반려동물과 함께 떠나는 행복한 여행
+## 주요 페이지
+- https://animal-trip.pages.dev/ : 펫트래블 홈 — 국내외 반려동물 동반 여행지 소개
+- https://animal-trip.pages.dev/domestic.html : 국내 반려동물 동반 여행지 모음
+- https://animal-trip.pages.dev/overseas.html : 해외 반려동물 동반 여행지 모음
+- https://animal-trip.pages.dev/about.html : 사이트 소개
+- https://animal-trip.pages.dev/contact.html : 문의
+
+## 가이드 · 분석
+- https://animal-trip.pages.dev/guides/overseas-pet-travel.html : 해외 반려동물 동반 여행 가이드 (검역·항공·KTX 규정)
+- https://animal-trip.pages.dev/research/pet-travel-destination-accessibility.html : 국내 여행지 접근성 비교 분석
+- https://animal-trip.pages.dev/research/pet-travel-satisfaction-analysis.html : 반려견 동반 여행 만족도 결정 요인 분석
+
+## 국내 여행지 (domestic)
+- https://animal-trip.pages.dev/domestic/jeju.html : 제주
+- https://animal-trip.pages.dev/domestic/busan.html : 부산
+- https://animal-trip.pages.dev/domestic/gangneung.html : 강릉
+- https://animal-trip.pages.dev/domestic/gyeongju.html : 경주
+- https://animal-trip.pages.dev/domestic/seoul.html : 서울
+- https://animal-trip.pages.dev/domestic/namhae.html : 남해
+- https://animal-trip.pages.dev/domestic/sokcho.html : 속초
+- https://animal-trip.pages.dev/domestic/yangyang.html : 양양
+- https://animal-trip.pages.dev/domestic/taean.html : 태안
+- https://animal-trip.pages.dev/domestic/gapyeong.html : 가평
+- https://animal-trip.pages.dev/domestic/incheon.html : 인천
+- https://animal-trip.pages.dev/domestic/daegu.html : 대구
+- https://animal-trip.pages.dev/domestic/jeonju.html : 전주
+- https://animal-trip.pages.dev/domestic/cheongpung.html : 청풍
+- https://animal-trip.pages.dev/domestic/muju.html : 무주
+- https://animal-trip.pages.dev/domestic/pet-accommodations.html : 반려동물 동반 숙소
+- https://animal-trip.pages.dev/domestic/pet-attractions.html : 반려동물 동반 관광지
+- https://animal-trip.pages.dev/domestic/pet-cafe-restaurants.html : 애견동반 카페·식당
+
+## 해외 여행지 (overseas)
+- https://animal-trip.pages.dev/overseas/japan.html : 일본
+- https://animal-trip.pages.dev/overseas/taiwan.html : 대만
+- https://animal-trip.pages.dev/overseas/thailand.html : 태국
+- https://animal-trip.pages.dev/overseas/vietnam.html : 베트남
+- https://animal-trip.pages.dev/overseas/singapore.html : 싱가포르
+- https://animal-trip.pages.dev/overseas/philippines.html : 필리핀
+- https://animal-trip.pages.dev/overseas/hawaii.html : 하와이
+- https://animal-trip.pages.dev/overseas/guam-saipan.html : 괌·사이판
+- https://animal-trip.pages.dev/overseas/europe.html : 유럽
+- https://animal-trip.pages.dev/overseas/usa-canada.html : 미국·캐나다
